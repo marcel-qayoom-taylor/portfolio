@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Node.js', 'Swift', 'AWS'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,30 +135,25 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hey! My name is Marcel and I enjoy creating things that help others and the world
+              around me. My interest in programming started back in 2012 when I discovered the Bash
+              terminal on my Dad's work computer. After learning I could use it to make text-based
+              adventure games (my passion at the time), I was hooked.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Fast-forward to today, I've developed full-stack web development skills through
+              working with <a href="https://www.nowcircular.com.au">Circular</a> and leading a
+              project for{' '}
+              <a href="https://www.uniting.org/community-impact/harris-community-centre">Uniting</a>
+              .
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              I also have a passion for marketing which I orchestrated at{' '}
+              <a href="https://www.fortressfamilyoffice.com">Fortress</a> and experiment with via my{' '}
+              <a href="https://www.youtube.com/channel/UCw5QzkTtFjTvwTLuqchZOOg">YouTube channel</a>
+              .
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
