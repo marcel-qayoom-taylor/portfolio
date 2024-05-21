@@ -1,13 +1,15 @@
 ---
-date: '2016-11-16'
-title: 'Weather Widget'
+date: '2022-12-23'
+title: 'Notion Database Mobile Controller'
 github: 'https://github.com/bchiang7/DemoWebApp'
 external: 'http://quiet-dusk-89245.herokuapp.com/'
 tech:
-  - Node
+  - Javascript
+  - Notion API
+  - NodeJS
   - Express
-  - EJS
-showInProjects: false
+  - Vercel
+showInProjects: True
 ---
 
-Simple weather app made with Node.js, Express, and Heroku. Utilized the OpenWeatherMap API and Google Maps API.
+Interface to automate gym data entry to my Notion via buttons on my phone's home screen
