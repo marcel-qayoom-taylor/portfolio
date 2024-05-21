@@ -1,7 +1,7 @@
 ---
-date: '1'
+date: '2'
 title: 'PantryPal'
-cover: './pantrypal.png'
+cover: './PantryPalDemo.png'
 external: 'https://apps.apple.com/au/app/pantrypal-meals-you-can-cook/id6447123179'
 tech:
   - Swift
