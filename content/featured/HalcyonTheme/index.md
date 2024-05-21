@@ -1,15 +1,13 @@
 ---
 date: '1'
-title: 'Halcyon Theme'
-cover: './halcyon.png'
-github: 'https://github.com/bchiang7/halcyon-site'
-external: 'https://halcyon-theme.netlify.com/'
+title: 'PantryPal'
+cover: './pantrypal.png'
+external: 'https://apps.apple.com/au/app/pantrypal-meals-you-can-cook/id6447123179'
 tech:
-  - VS Code
-  - Sublime Text
-  - Atom
-  - iTerm2
-  - Hyper
+  - Swift
+  - Figma
+  - CoreData
+  - XCode
 ---
 
-A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode), [Package Control](https://packagecontrol.io/packages/Halcyon%20Theme), [Atom Package Manager](https://atom.io/themes/halcyon-syntax), and [npm](https://www.npmjs.com/package/hyper-halcyon-theme).
+PantryPal is a mobile app that helps home cooks by suggesting recipes based on the ingredients that they already have. I want to make home cooking easier, cheaper and more accessible.
