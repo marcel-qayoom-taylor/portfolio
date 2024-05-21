@@ -1,5 +1,5 @@
 ---
-date: '2022-01-01'
+date: '2025-01-01'
 title: 'Expenses Chart Component'
 external: 'https://github.com/marcel-qayoom-taylor/expenses-chart-component'
 tech:
