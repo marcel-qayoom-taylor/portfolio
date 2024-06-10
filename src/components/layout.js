@@ -59,7 +59,7 @@ const Layout = ({ children, location }) => {
           </a>
 
           <StyledContent>
-            <Nav isHome={isHome} />
+            <Nav isHome={true} />
             <Social isHome={isHome} />
             <Email isHome={isHome} />
 
