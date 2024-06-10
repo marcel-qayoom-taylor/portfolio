@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { navLinks } from '@config';
-import { KEY_CODES } from '@utils';
 import { useOnClickOutside } from '@hooks';
 
 const StyledMenu = styled.div`
@@ -162,76 +161,6 @@ const Menu = () => {
 
   const buttonRef = useRef(null);
   const navRef = useRef(null);
-
-  let menuFocusables;
-  let firstFocusableEl;
-  let lastFocusableEl;
-
-  const setFocusables = () => {
-    menuFocusables = [buttonRef.current, ...Array.from(navRef.current.querySelectorAll('a'))];
-    firstFocusableEl = menuFocusables[0];
-    lastFocusableEl = menuFocusables[menuFocusables.length - 1];
-  };
-
-  const handleBackwardTab = e => {
-    if (document.activeElement === firstFocusableEl) {
-      e.preventDefault();
-      lastFocusableEl.focus();
-    }
-  };
-
-  const handleForwardTab = e => {
-    if (document.activeElement === lastFocusableEl) {
-      e.preventDefault();
-      firstFocusableEl.focus();
-    }
-  };
-
-  const onKeyDown = e => {
-    switch (e.key) {
-      case KEY_CODES.ESCAPE:
-      case KEY_CODES.ESCAPE_IE11: {
-        setMenuOpen(false);
-        break;
-      }
-
-      case KEY_CODES.TAB: {
-        if (menuFocusables && menuFocusables.length === 1) {
-          e.preventDefault();
-          break;
-        }
-        if (e.shiftKey) {
-          handleBackwardTab(e);
-        } else {
-          handleForwardTab(e);
-        }
-        break;
-      }
-
-      default: {
-        break;
-      }
-    }
-  };
-
-  const onResize = e => {
-    if (e.currentTarget.innerWidth > 768) {
-      setMenuOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener('keydown', onKeyDown);
-    window.addEventListener('resize', onResize);
-
-    setFocusables();
-
-    return () => {
-      document.removeEventListener('keydown', onKeyDown);
-      window.removeEventListener('resize', onResize);
-    };
-  }, []);
-
   const wrapperRef = useRef();
   useOnClickOutside(wrapperRef, () => setMenuOpen(false));
 
