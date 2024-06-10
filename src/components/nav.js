@@ -179,6 +179,7 @@ const Nav = ({ isHome }) => {
 
   const timeout = isHome ? loaderDelay : 0;
   const fadeClass = isHome ? 'fade' : '';
+  const fadeDownClass = isHome ? 'fadedown' : '';
 
   const Logo = (
     <div className="logo" tabIndex="-1">
@@ -237,16 +238,28 @@ const Nav = ({ isHome }) => {
 
             <StyledLinks>
               <ol>
-                {isMounted &&
-                  navLinks &&
-                  navLinks.map(({ url, name }, i) => (
-                    <li key={i}>
-                      <Link to={url}>{name}</Link>
-                    </li>
-                  ))}
+                <TransitionGroup component={null}>
+                  {isMounted &&
+                    navLinks &&
+                    navLinks.map(({ url, name }, i) => (
+                      <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
+                        <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
+                          <Link to={url}>{name}</Link>
+                        </li>
+                      </CSSTransition>
+                    ))}
+                </TransitionGroup>
               </ol>
 
-              <div>{ResumeLink}</div>
+              <TransitionGroup component={null}>
+                {isMounted && (
+                  <CSSTransition classNames={fadeDownClass} timeout={timeout}>
+                    <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
+                      {ResumeLink}
+                    </div>
+                  </CSSTransition>
+                )}
+              </TransitionGroup>
             </StyledLinks>
 
             <TransitionGroup component={null}>
