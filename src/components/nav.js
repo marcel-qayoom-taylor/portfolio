@@ -151,7 +151,7 @@ const StyledLinks = styled.div`
 `;
 
 const Nav = ({ isHome }) => {
-  const [isMounted, setIsMounted] = useState(!isHome);
+  const [isMounted, setIsMounted] = useState(true);
   const scrollDirection = useScrollDirection('down');
   const [scrolledToTop, setScrolledToTop] = useState(true);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -229,18 +229,15 @@ const Nav = ({ isHome }) => {
         ) : (
           <>
             <TransitionGroup component={null}>
-              {isMounted && (
-                <CSSTransition classNames={fadeClass} timeout={timeout}>
-                  <>{Logo}</>
-                </CSSTransition>
-              )}
+              <CSSTransition classNames={fadeClass} timeout={timeout}>
+                <>{Logo}</>
+              </CSSTransition>
             </TransitionGroup>
 
             <StyledLinks>
               <ol>
                 <TransitionGroup component={null}>
-                  {isMounted &&
-                    navLinks &&
+                  {navLinks &&
                     navLinks.map(({ url, name }, i) => (
                       <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
                         <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
@@ -252,13 +249,11 @@ const Nav = ({ isHome }) => {
               </ol>
 
               <TransitionGroup component={null}>
-                {isMounted && (
-                  <CSSTransition classNames={fadeDownClass} timeout={timeout}>
-                    <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
-                      {ResumeLink}
-                    </div>
-                  </CSSTransition>
-                )}
+                <CSSTransition classNames={fadeDownClass} timeout={timeout}>
+                  <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
+                    {ResumeLink}
+                  </div>
+                </CSSTransition>
               </TransitionGroup>
             </StyledLinks>
 
