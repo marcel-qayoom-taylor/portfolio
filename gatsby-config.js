@@ -5,7 +5,7 @@ module.exports = {
     title: 'Marcel Qayoom-Taylor',
     description:
       'Marcel Qayoom-Taylor is a software engineer who is passionate about climate and social impact driven projects.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+    siteUrl: 'https://marcelqt.vercel.app', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@marcelqtaylor',
   },
