@@ -2,7 +2,7 @@
 date: '1'
 title: 'Community Compass'
 cover: './CommunityCompassDemo.png'
-external: 'https://youtu.be/GMKWOYb4Lhc'
+external: 'https://communitycompass.com.au/'
 tech:
   - React
   - NextJS
