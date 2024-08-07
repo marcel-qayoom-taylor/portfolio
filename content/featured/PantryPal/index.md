@@ -2,7 +2,7 @@
 date: '2'
 title: 'PantryPal'
 cover: './PantryPalDemo.png'
-external: 'https://apps.apple.com/au/app/pantrypal-meals-you-can-cook/id6447123179'
+external: 'https://pantrypal.com.au'
 tech:
   - Swift
   - Figma
