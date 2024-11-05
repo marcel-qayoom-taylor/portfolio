@@ -143,16 +143,31 @@ const About = () => {
 
             <p>
               Fast-forward to today, I've gained full-stack web dev skills through working with{' '}
-              <a href="https://www.nowcircular.com.au">Circular</a>, led a project for{' '}
-              <a href="https://www.uniting.org/community-impact/harris-community-centre">Uniting</a>{' '}
-              and created a startup to make home-cooking more accessible at{' '}
-              <a href="https://www.pantrypal.com.au/">PantryPal</a>.
+              <a target="blank" href="https://www.nowcircular.com.au">
+                Circular
+              </a>
+              , led a project for{' '}
+              <a
+                target="blank"
+                href="https://www.uniting.org/community-impact/harris-community-centre">
+                Uniting
+              </a>{' '}
+              and built an open-source, AI tool to improve web accessibility through{' '}
+              <a target="blank" href="https://youtu.be/ODJQ8tEkPNk">
+                GuideDog
+              </a>
+              .
             </p>
 
             <p>
               I also have a passion for marketing which I orchestrated at{' '}
-              <a href="https://www.fortressfamilyoffice.com">Fortress</a> and experiment with via my{' '}
-              <a href="https://www.youtube.com/channel/UCw5QzkTtFjTvwTLuqchZOOg">YouTube channel</a>
+              <a target="blank" href="https://www.fortressfamilyoffice.com">
+                Fortress
+              </a>{' '}
+              and experiment with via my{' '}
+              <a target="blank" href="https://www.youtube.com/channel/UCw5QzkTtFjTvwTLuqchZOOg">
+                YouTube channel
+              </a>
               .
             </p>
 
