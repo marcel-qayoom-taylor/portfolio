@@ -142,11 +142,11 @@ const About = () => {
             </p>
 
             <p>
-              Fast-forward to today, I've developed full-stack web development skills through
-              working with <a href="https://www.nowcircular.com.au">Circular</a> and leading a
-              project for{' '}
-              <a href="https://www.uniting.org/community-impact/harris-community-centre">Uniting</a>
-              .
+              Fast-forward to today, I've gained full-stack web dev skills through working with{' '}
+              <a href="https://www.nowcircular.com.au">Circular</a>, led a project for{' '}
+              <a href="https://www.uniting.org/community-impact/harris-community-centre">Uniting</a>{' '}
+              and created a startup to make home-cooking more accessible at{' '}
+              <a href="https://www.pantrypal.com.au/">PantryPal</a>.
             </p>
 
             <p>

@@ -1,15 +1,17 @@
 ---
 date: '3'
-title: 'Market Watch'
-cover: './MarketWatchDemo.png'
-github: 'https://github.com/marcel-qayoom-taylor/Stock-Market-Watchlist/tree/main'
+title: 'GuideDog'
+cover: './GuideDogDemo.jpg'
+github: 'https://github.com/marcel-qayoom-taylor/GuideDog-Package'
+external: 'https://www.youtube.com/watch?v=ODJQ8tEkPNk'
 tech:
-  - Express
-  - NodeJS
-  - EJS
-  - Yahoo Finance API
+  - React
+  - TypeScript
+  - Node
+  - OpenAI
 ---
 
-Market Watch was my final project for Software Design and Development in highschool. The project landed me top marks and awarded me first place in the year and top ten in the state.
+GuideDog is an open-source, AI-powered dev tool to automates improving website accessibility. GuideDog won 1st place out of 25 teams at
+my university's yearly innovation project.
 
-Users can track their favourite company stocks including key information such as live price and daily % change. Users also got recommended stocks based on their portfolio preferences.
+GuideDog is a Node package and a VSCode extension.
